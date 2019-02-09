@@ -11,7 +11,7 @@
 <body>
     <div class="contenedor">
         
-    <form method="GET" action="/">
+    <form method="POST" action="/">
         <h1>Formulario</h1>
         <label class="marg-agregar" for="user">Usuario</label> <br>
         <input type="text" name="usuario" id="user" placeholder="Usuario"> <br>
@@ -34,9 +34,9 @@
     </div>
         
         <p>¿Cuál es tu nivel programando?</p>
-        <input type="radio" name="nivel" id="basico"> <label for="basico">Básico</label>
-        <input type="radio" name="nivel" id="intermedio"><label for="intermedio">Intermedio</label>
-        <input type="radio" name="nivel" id="avanzado"> <label for="avanzado">Avanzado</label>
+        <input type="radio" name="nivel" id="basico" value="basico"> <label for="basico">Básico</label>
+        <input type="radio" name="nivel" id="intermedio" value="intermedio"><label for="intermedio">Intermedio</label>
+        <input type="radio" name="nivel" id="avanzado" value="avanzado"> <label for="avanzado">Avanzado</label>
 
         
         <p>País de origen</p>
