@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+</head>
+<body>
+    <div class="contenedor">
+        
+    <form method="GET" action="/">
+        <h1>Formulario</h1>
+        <label class="marg-agregar" for="user">Usuario</label> <br>
+        <input type="text" name="usuario" id="user" placeholder="Usuario"> <br>
+        <label class="marg-agregar" for="pass">Contraseña</label> <br>
+        <input type="password" name="password" id="pass" placeholder="Contraseña"> <br>
+        <label class="marg-agregar" for="correo">Correo</label> <br>
+        <input type="email" name="" id="correo" placeholder="name@domain.com">
+        
+    <div class="intereses">
+        <p>Selecciona tus intereses (Al menos 2)</p>
+        
+        <input type="checkbox" name="lenguaje[]" id="HTML"> <label for="HTML">HTML5</label><br>
+        <input type="checkbox" name="lenguaje[]" id="CSS"> <label for="CSS">CSS</label><br>
+        <input type="checkbox" name="lenguaje[]" id="JS"> <label for="JS">Javascript</label><br>
+        <input type="checkbox" name="lenguaje[]" id="PHP"> <label for="PHP">php</label><br>
+        <input type="checkbox" name="lenguaje[]" id="Java"> <label for="Java">Java</label><br>
+        <input type="checkbox" name="lenguaje[]" id="PY"> <label for="PY">Python</label><br>
+        <input type="checkbox" name="lenguaje[]" id="CSh"> <label for="CSh">C#</label><br>
+        <input type="checkbox" name="lenguaje[]" id="ERRE"> <label for="ERRE">R</label><br>
+    </div>
+        
+        <p>¿Cuál es tu nivel programando?</p>
+        <input type="radio" name="nivel" id="basico"> <label for="basico">Básico</label>
+        <input type="radio" name="nivel" id="intermedio"><label for="intermedio">Intermedio</label>
+        <input type="radio" name="nivel" id="avanzado"> <label for="avanzado">Avanzado</label>
+
+        
+        <p>País de origen</p>
+        <input list="pais">
+        <datalist id="pais">
+            <option value="AR">Argentina
+            <option value="MX">México
+            <option value="PY">Paraguay
+            <option value="PE">Peru
+            <option value="CL">Chile
+            <option value="PA">Panama
+            <option value="CO">Colombia
+            
+        </datalist>
+    <div class="contenedor-boton">
+    <input type="submit" value="Enviar" id="button">
+    </div>
+    </form>
+    
+</body>
+</html>
